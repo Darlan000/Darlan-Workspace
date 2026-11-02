@@ -1,0 +1,270 @@
+/* Trava a tela para sumir com a barra de rolagem */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    color: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3rem 2.5rem;
+}
+
+/* CAMADA 1: Estrelas Pequenas */
+#stars,
+#stars::after {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow:
+        120px 340px #fff,
+        780px 120px #fff,
+        1420px 890px #fff,
+        450px 1100px #fff,
+        1680px 320px #fff,
+        890px 1450px #fff,
+        230px 1780px #fff,
+        1150px 450px #fff,
+        1540px 1200px #fff,
+        670px 890px #fff,
+        340px 230px #fff,
+        1890px 980px #fff,
+        90px 1340px #fff,
+        1340px 1670px #fff,
+        560px 430px #fff,
+        1780px 120px #fff,
+        1020px 920px #fff,
+        410px 1560px #fff,
+        1230px 210px #fff,
+        800px 1780px #fff,
+        150px 670px #fff,
+        1600px 1410px #fff,
+        710px 310px #fff,
+        1310px 890px #fff,
+        940px 1120px #fff,
+        490px 870px #fff,
+        1820px 450px #fff,
+        270px 1290px #fff,
+        1110px 1530px #fff,
+        630px 180px #fff,
+        1470px 760px #fff,
+        380px 1430px #fff,
+        850px 540px #fff,
+        1750px 1110px #fff,
+        520px 1690px #fff,
+        1280px 380px #fff,
+        190px 990px #fff,
+        1050px 1270px #fff,
+        1590px 190px #fff,
+        740px 1620px #fff,
+        310px 480px #fff,
+        1390px 1080px #fff,
+        880px 130px #fff,
+        1670px 840px #fff,
+        430px 1210px #fff,
+        1180px 650px #fff,
+        220px 1510px #fff,
+        970px 940px #fff,
+        1510px 490px #fff,
+        610px 1380px #fff,
+        1790px 1720px #fff,
+        350px 810px #fff,
+        1250px 1460px #fff,
+        790px 290px #fff,
+        1440px 1630px #fff,
+        50px 400px #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: animStar 70s linear infinite;
+}
+
+#stars::after {
+    content: " ";
+    top: 2000px;
+}
+
+/* CAMADA 2: Estrelas Médias */
+#stars2,
+#stars2::after {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow:
+        250px 180px #fff,
+        910px 520px #fff,
+        1380px 1120px #fff,
+        510px 1640px #fff,
+        1720px 730px #fff,
+        390px 1290px #fff,
+        1140px 380px #fff,
+        830px 1470px #fff,
+        160px 890px #fff,
+        1490px 210px #fff,
+        680px 1750px #fff,
+        1070px 940px #fff,
+        420px 350px #fff,
+        1850px 1310px #fff,
+        760px 1080px #fff,
+        1290px 620px #fff,
+        300px 1580px #fff,
+        1560px 850px #fff,
+        980px 170px #fff,
+        610px 1190px #fff,
+        1410px 1430px #fff,
+        190px 470px #fff,
+        1200px 1690px #fff,
+        870px 790px #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: animStar 110s linear infinite;
+}
+
+#stars2::after {
+    content: " ";
+    top: 2000px;
+}
+
+/* CAMADA 3: Estrelas Grandes */
+#stars3,
+#stars3::after {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow:
+        400px 600px #fff,
+        1100px 300px #fff,
+        800px 1500px #fff,
+        1500px 900px #fff,
+        200px 1200px #fff,
+        1300px 1700px #fff,
+        600px 200px #fff,
+        1700px 1400px #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    animation: animStar 150s linear infinite;
+}
+
+#stars3::after {
+    content: " ";
+    top: 2000px;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+/* Container do Workspace */
+.workspace-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    z-index: 1;
+}
+
+/* Título interno */
+.workspace-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    letter-spacing: 0.5px;
+    border-left: 4px solid #38bdf8; /* Azul estelar neon */
+    padding-left: 0.8rem;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.4);
+}
+
+/* Grade de Cards */
+.cards-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* NOVO ESTILO DE CARD: Glassmorphism Espacial */
+.card {
+    width: 290px;
+    height: 190px;
+    background: rgba(15, 23, 42, 0.65); /* Fundo translúcido escuro estilo espaço */
+    backdrop-filter: blur(12px); /* Efeito de vidro fosco */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(56, 189, 248, 0.2); /* Borda sutil azulada */
+    border-radius: 20px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow:
+        0 8px 32px 0 rgba(0, 0, 0, 0.37),
+        inset 0 0 15px rgba(56, 189, 248, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.6); /* Brilho azul vivo ao passar o mouse */
+    box-shadow:
+        0 12px 40px rgba(56, 189, 248, 0.25),
+        inset 0 0 20px rgba(56, 189, 248, 0.15);
+}
+
+/* Tipografia do Card */
+.card-content h3 {
+    font-size: 1.15rem;
+    color: #f8fafc;
+    margin: 0 0 0.4rem 0;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card-content p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* Botão Espacial Futurista */
+.card-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.55em 1.2em;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    align-self: flex-start;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+}
+
+.card-btn:hover {
+    background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+    transform: translateY(-1px);
+}

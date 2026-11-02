@@ -1,0 +1,177 @@
+[
+    {
+        "nome": "OFF SET",
+        "gramaturas": [
+            { "valor": "56", "base": 28 },
+            { "valor": "60", "base": 25 },
+            { "valor": "63", "base": 24 },
+            { "valor": "70", "base": 22 },
+            { "valor": "75", "base": 20 },
+            { "valor": "80", "base": 21 },
+            { "valor": "85", "base": 18 },
+            { "valor": "90", "base": 17 },
+            { "valor": "120", "base": 13 }
+        ]
+    },
+    {
+        "nome": "OFF SET CHINES",
+        "gramaturas": [
+            { "valor": "90", "base": 20 },
+            { "valor": "75", "base": 22 }
+        ]
+    },
+    {
+        "nome": "AVENA",
+        "gramaturas": [
+            { "valor": "70", "base": 21 },
+            { "valor": "80", "base": 18.5 },
+            { "valor": "90", "base": 16.5 }
+        ]
+    },
+    {
+        "nome": "AVENA MAIS",
+        "gramaturas": [{ "valor": "70", "base": 16 }]
+    },
+    {
+        "nome": "HOME FINE",
+        "gramaturas": [{ "valor": "60", "base": 21.5 }]
+    },
+    {
+        "nome": "WOOD FREE",
+        "gramaturas": [
+            { "valor": "68", "base": 23.5 },
+            { "valor": "78", "base": 19 },
+            { "valor": "PAPER CREAMY 78g", "base": 19 }
+        ]
+    },
+    {
+        "nome": "BOOK CREAM",
+        "gramaturas": [
+            { "valor": "80", "base": 13.5 },
+            { "valor": "90", "base": 11.5 }
+        ]
+    },
+    {
+        "nome": "BULK PAPER GOLDEM",
+        "gramaturas": [{ "valor": "80", "base": 13 }]
+    },
+    {
+        "nome": "HOME BOOK",
+        "gramaturas": [
+            { "valor": "52", "base": 18 },
+            { "valor": "55", "base": 17.5 },
+            { "valor": "65", "base": 13 },
+            { "valor": "80", "base": 11 },
+            { "valor": "90", "base": 10 }
+        ]
+    },
+    {
+        "nome": "SNOWBRIGHT",
+        "gramaturas": [
+            { "valor": "55", "base": 17 },
+            { "valor": "60", "base": 18.5 },
+            { "valor": "65", "base": 13 },
+            { "valor": "70", "base": 13 },
+            { "valor": "80", "base": 12 }
+        ]
+    },
+    {
+        "nome": "LUX CREAM",
+        "gramaturas": [
+            { "valor": "60", "base": 18.5 },
+            { "valor": "70", "base": 16 },
+            { "valor": "80", "base": 14 },
+            { "valor": "90", "base": 12.5 }
+        ]
+    },
+    {
+        "nome": "POLEN NATURAL",
+        "gramaturas": [
+            { "valor": "70", "base": 22 },
+            { "valor": "80", "base": 18 },
+            { "valor": "90", "base": 14 }
+        ]
+    },
+    {
+        "nome": "HYLTE CREAM",
+        "gramaturas": [
+            { "valor": "60", "base": 19 },
+            { "valor": "70", "base": 16 }
+        ]
+    },
+    {
+        "nome": "UMP OPALITE",
+        "gramaturas": [{ "valor": "36", "base": 46 }]
+    },
+    {
+        "nome": "UMP BOOK CREMY",
+        "gramaturas": [
+            { "valor": "52", "base": 20 },
+            { "valor": "60", "base": 17 },
+            { "valor": "70", "base": 15 },
+            { "valor": "80", "base": 13.5 }
+        ]
+    },
+    {
+        "nome": "POLEN BOLD",
+        "gramaturas": [
+            { "valor": "70", "base": 16 },
+            { "valor": "90", "base": 12 }
+        ]
+    },
+    {
+        "nome": "POLEN SOFT",
+        "gramaturas": [
+            { "valor": "70", "base": 20.5 },
+            { "valor": "80", "base": 18 }
+        ]
+    },
+    {
+        "nome": "NORBRITE",
+        "gramaturas": [{ "valor": "66", "base": 14.5 }]
+    },
+    {
+        "nome": "IVORY SLIM BOOK",
+        "gramaturas": [
+            { "valor": "58G", "base": 25 },
+            { "valor": "65g 2.0", "base": 22 },
+            { "valor": "65g 1.3", "base": 24 }
+        ]
+    },
+    {
+        "nome": "IVORY SPEED",
+        "gramaturas": [{ "valor": "58", "base": 26 }]
+    },
+    {
+        "nome": "IVORY BOOK BULK",
+        "gramaturas": [
+            { "valor": "58", "base": 18 },
+            { "valor": "65g 1.7", "base": 15 },
+            { "valor": "65g 1.8", "base": 18 },
+            { "valor": "90", "base": 13.5 }
+        ]
+    },
+    {
+        "nome": "IVORY BULK",
+        "gramaturas": [{ "valor": "58g 1.8", "base": 21 }]
+    },
+    {
+        "nome": "IVORY COLD",
+        "gramaturas": [
+            { "valor": "58", "base": 21.6 },
+            { "valor": "65", "base": 19 }
+        ]
+    },
+    {
+        "nome": "BOOK PAPER BULK 2.0",
+        "gramaturas": [{ "valor": "65", "base": 16 }]
+    },
+    {
+        "nome": "PAPER SUM PAPER",
+        "gramaturas": [{ "valor": "78", "base": 21 }]
+    },
+    {
+        "nome": "NOTE BOOK PAPER",
+        "gramaturas": [{ "valor": "75", "base": 21.7 }]
+    }
+]

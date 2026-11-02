@@ -1,0 +1,101 @@
+:root {
+    --cor-principal: #252525;
+    --cor-fundo: #212121;
+    --cor-formulario: #171717;
+    --cor-texto: white;
+    --cor-texto-input: #d3d3d3;
+    --cor-hover: black;
+    --cor-sombra: rgb(5, 5, 5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    width: 20em;
+    flex-direction: column;
+    padding: 1em 1em 0.4em;
+    background: var(--cor-formulario);
+    border-radius: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+#heading {
+    text-align: center;
+    margin: 0.5em;
+    color: var(--cor-texto);
+    font-size: 1.2em;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6em;
+    margin: 0.5em 0;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: var(--cor-texto);
+    background: var(--cor-formulario);
+    box-shadow: inset 2px 5px 10px var(--cor-sombra);
+}
+
+.input-icon {
+    width: 1.3em;
+    height: 1.3em;
+    fill: var(--cor-texto);
+}
+
+.input-field {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--cor-texto-input);
+}
+
+.form .btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+.button1,
+.button2 {
+    padding: 0.5em;
+    margin-bottom: 3em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background: var(--cor-principal);
+    color: var(--cor-texto);
+    transition: 0.4s ease-in-out;
+}
+
+.button1,
+.button2 {
+    padding-inline: 2.3em;
+    margin-inline: 0.5em;
+}
+
+.button1:hover,
+.button2:hover {
+    background: var(--cor-hover);
+}
+
+.escondido {
+    display: none;
+}

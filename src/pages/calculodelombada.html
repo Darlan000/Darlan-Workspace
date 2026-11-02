@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/calculodelombada.css" />
+        <title>Darlan Workspace | Cálculo de Lombada</title>
+    </head>
+    <body>
+        <header>
+            <h1>Darlan Workspace | Cálculo de Lombada</h1>
+        </header>
+        <main>
+            <div class="Formulario">
+                <form id="formLombada">
+                    <label for="TipoPapel">Tipo de Papel</label>
+                    <select id="TipoPapel" required>
+                        <option value="" disabled selected>Selecione o tipo de papel</option>
+                    </select>
+
+                    <label for="TipoGramatura">Tipo de Gramatura</label>
+                    <select id="TipoGramatura" required disabled>
+                        <option value="" disabled selected>Selecione o tipo de Gramatura</option>
+                    </select>
+
+                    <label for="quantidadePaginas">Quantidade de Páginas:</label>
+                    <input type="number" id="quantidadePaginas" placeholder="Ex: 100, 200..." required min="1" />
+
+                    <div class="checkbox-container">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="tipoEncadernacao" />
+                            <label for="tipoEncadernacao"><b>Cartonado</b></label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="tipoCapaFresado" />
+                            <label for="tipoCapaFresado"><b>Fresado</b></label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="tipoCapaCosturado" />
+                            <label for="tipoCapaCosturado"><b>Costurado</b></label>
+                        </div>
+                    </div>
+
+                    <button type="submit"><b>Calcular</b></button>
+                </form>
+                <div id="resultadoLombada" class="resultado"></div>
+            </div>
+
+            <div id="popupResultado" class="popup">
+                <div class="popup-content">
+                    <span class="close-button">&times;</span>
+                    <h2>Resultado da Lombada</h2>
+                    <div id="popupMensagem"></div>
+                </div>
+            </div>
+
+            <div class="Aviso">
+                <p>É possível que ocorram pequenas variações,<br />dependendo do lote e do fabricante do papel <br />utilizado.</p>
+            </div>
+        </main>
+        <footer>
+            <p>
+                <b>Criador do Site: </b><a href="https://wa.me/5511997288922" target="_blank" rel="noopener noreferrer"><b>Darlan José</b></a>
+            </p>
+            <p>
+                <b>Criador do Cálculo: </b><a href="https://wa.me/5511965863466" target="_blank" rel="noopener noreferrer"><b>Sandro Munhoz</b></a>
+            </p>
+        </footer>
+
+        <script src="/js/calculodelombada.js"></script>
+    </body>
+</html>
